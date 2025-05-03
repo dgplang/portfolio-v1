@@ -584,13 +584,8 @@ video {
   display: none;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-full {
@@ -619,6 +614,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.overflow-visible {
+  overflow: visible;
 }
 
 .rounded-full {
@@ -730,13 +729,12 @@ video {
     margin-top: 1.25rem;
   }
 
-  .sm\:w-full {
-    width: 100%;
+  .sm\:w-3\/4 {
+    width: 75%;
   }
 
-  .sm\:w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:gap-6 {
