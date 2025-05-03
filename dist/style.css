@@ -568,11 +568,6 @@ video {
   margin-right: 1.25rem;
 }
 
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -591,6 +586,11 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-full {
@@ -726,17 +726,17 @@ video {
     margin-right: 2.5rem;
   }
 
-  .sm\:mx-5 {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-  }
-
   .sm\:mt-5 {
     margin-top: 1.25rem;
   }
 
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .sm\:gap-6 {
