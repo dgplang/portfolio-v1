@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Plang | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/dist/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/dist/style.css">
 </head>
 <body class="m-0 p-0 box-border">
     <div class="min-h-screen flex flex-col">
@@ -31,12 +31,12 @@
             </div>
         </header>
         <main class="flex-grow">
-            <section id="hero" class="pt-8 sm:pt-10 md:pt-12">
+            <section id="hero" class="py-5 sm:pt-10 md:pt-12">
                 <div class="flex flex-col mx-5 xs:mx-10 sm:mx-10 md:mx-20 md:flex-row items-center gap-4 sm:gap-6 md:gap-8">
                   <!-- Hero Image (Order First on Small Screens) -->
                   <div class="flex flex-col items-center order-1 md:order-2 w-full md:w-1/2">
                     <div class="w-3/4 sm:w-3/4 md:w-full lg:w-3/4">
-                      <img src="/media/hero-img.png" alt="Plang's profile picture" class="w-full object-cover rounded-full shadow-solid" />
+                      <img src="/dist/media/hero-img.png" alt="Plang's profile picture" class="w-full object-cover rounded-full shadow-solid" />
                     </div>
                   </div>
                   <!-- Text Content (Order Second on Small Screens) -->
@@ -46,11 +46,24 @@
                     </h1>
                     <p class="text-xs sm:text-sm md:text-base lg:text-xl font-medium text-center md:text-left">
                       I offer top-notch expertise in HTML, Tailwind CSS, Git & GitHub (Collaborative Technology), and JavaScript. My proficiency in these technologies is evident, as I deliver high-quality skills in web development.</p>
-                    <p class="text-xs sm:text-sm md:text-base lg:text-xl font-medium text-center md:text-left">Currently in  training at Blockfuse Labs, Jos, Nigeria, to become a Fullstack Developer. Other technologies in view: React.js, Node.js, MongoDB, amongst others.
+                    <p class="text-xs sm:text-sm md:text-base lg:text-xl font-medium text-center md:text-left">
+                      Currently in  training at Blockfuse Labs, Jos, Nigeria, to become a Fullstack Developer. Other technologies in view: React.js, Node.js, MongoDB, amongst others.
                     </p>
                     <a href="https://github.com/dgplang?tab=repositories" target="_blank" aria-label="Download Plang's resume" class="w-full bg-red-500 text-xs text-center sm:text-sm md:w-fit md:text-base lg:text-xl text-white font-semibold px-3 sm:px-4 py-1 sm:py-2 rounded-none hover:bg-red-700 transition-colors">Download Resume</a>
                   </div>
                 </div>
+            </section>
+            <section id="blog-featured" class="bg-[#ebf7f9]">
+              <div class="flex flex-col md:flex-row mx-5 xs:mx-10 sm:mx-10 md:mx-20">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center w-full py-4">
+                  <div class="text-lg font-semibold">Recent posts</div>
+                  <div class="hidden md:block text-blue-600 hover:underline">View all</div>
+                </div>
+                <div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
             </section>
         </main>
     </div>
