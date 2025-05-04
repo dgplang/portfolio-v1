@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/dist/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/dist/style.css">
 </head>
 <body class="m-0 p-0 box-border">
     <div class="min-h-screen flex flex-col">
@@ -24,11 +24,10 @@
                 </div>
             </nav>
             <!-- Mobile Menu (Hidden by Default) -->
-            <div id="mobile-menu" class="hidden flex-col items-center gap-4 bg-gray-100 text-gray-800 py-5 mx-5 xs:mx-10 sm:mx-10 md:hidden text-center">
-                <a href="#" class="hover:underline text-xl font-semibold w-full">Skills</a>
-                <a href="#" class="hover:underline text-xl font-semibold w-full">Skills</a>
-                <a href="#" class="hover:underline text-xl font-semibold w-full">Projects</a>
-                <a href="#" class="hover:underline text-xl font-semibold w-full">Contact</a>
+            <div id="mobile-menu" class="hidden flex items-center gap-6 bg-gray-100 text-gray-800 py-5 mx-5 xs:mx-10 sm:mx-10 md:hidden">
+              <a href="#" class="hover:underline text-xl font-semibold w-full text-center">Skills</a>
+              <a href="#" class="hover:underline text-xl font-semibold w-full text-center">Projects</a>
+              <a href="#" class="hover:underline text-xl font-semibold w-full text-center">Contact</a>
             </div>
         </header>
         <main class="flex-grow">
@@ -37,7 +36,7 @@
                   <!-- Hero Image (Order First on Small Screens) -->
                   <div class="flex flex-col items-center order-1 md:order-2 w-full md:w-1/2">
                     <div class="w-3/4 sm:w-3/4 md:w-full lg:w-3/4">
-                      <img src="/media/hero-img.png" alt="Plang's profile picture" class="w-full object-cover rounded-full shadow-solid" />
+                      <img src="/dist/media/hero-img.png" alt="Plang's profile picture" class="w-full object-cover rounded-full shadow-solid" />
                     </div>
                   </div>
                   <!-- Text Content (Order Second on Small Screens) -->
