@@ -6,43 +6,61 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/cSS 2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body class="m-0 p-0 box-border">
-    <header>
-        <nav class="flex justify-between text-gray-800 py-5 mx-5 xs:mx-10 sm:mx-10 md:mx-20">
-            <div>
-            </div>
-            <div class="flex items-center justify-center gap-5 text-xl font-semibold">
-                <div class="hidden md:block"><a href="#" class="hover:underline">Skills</a></div>
-                <div class="hidden md:block"><a href="#" class="hover:underline">Projects</a></div>
-                <div class="hidden md:block"><a href="#" class="hover:underline">Contact</a></div>
-                <div id="menu-toggle" class="block md:hidden"><a href="#" aria-label="Open menu"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
-            </div>
-        </nav>
-
-    </header>
-    <main>
-        <section id="hero">
-            <div class="flex flex-col sm:mt-5 md:mt-8 lg:mt-10 mx-5 xs:mx-10 sm:mx-10 md:mx-20 md:flex-row items-center gap-4 sm:gap-6 md:gap-8 vw-100">
-              <div class="flex flex-col gap-4 mx-20 sm:gap-6 md:gap-8 w-full sm:w-full md:w-1/2">
-                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
-                  Hi, I'm Plang,<br>Frontend Developer
-                </h1>
-                <p class="text-xs sm:text-sm md:text-base lg:text-xl font-medium">
-                  I possess top-notch expertise in HTML, Tailwind CSS, and JavaScript. My proficiency in these technologies is exceptional. I deliver high-quality skills in web development using these tools.
-                </p>
-                <a href="https://github.com/dgplang?tab=repositories" target="_blank" aria-label="Download Plang's resume" class="w-full bg-red-500 text-xs text-center sm:text-sm md:w-fit md:text-base lg:text-xl text-white font-semibold px-3 sm:px-4 py-1 sm:py-2 rounded-none hover:bg-red-700 transition-colors">Visit My GitHub</a>
-              </div>
-              <div class="flex flex-col items-center overflow-visible">
-                <div class="w-3/4 sm:w-3/4 md:w-1/2 lg:w-1/2">
-                  <img src="/media/hero-img.png" alt="Plang's profile picture" class="w-full object-cover rounded-full shadow-solid" />
+    <div class="min-h-screen flex flex-col">
+        <header>
+            <nav class="flex justify-between text-gray-800 py-5 mx-5 xs:mx-10 sm:mx-10 md:mx-20">
+                <div>
                 </div>
-              </div>
+                <div class="flex items-center justify-center gap-5 text-xl font-semibold">
+                    <div class="hidden md:block"><a href="#" class="hover:underline">Skills</a></div>
+                    <div class="hidden md:block"><a href="#" class="hover:underline">Projects</a></div>
+                    <div class="hidden md:block"><a href="#" class="hover:underline">Contact</a></div>
+                    <div id="menu-toggle" class="block md:hidden"><a href="#" aria-label="Open menu"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+                </div>
+            </nav>
+            <!-- Mobile Menu (Hidden by Default) -->
+            <div id="mobile-menu" class="hidden flex-col items-center gap-4 bg-gray-100 text-gray-800 py-5 mx-5 xs:mx-10 sm:mx-10 md:hidden text-center">
+                <a href="#" class="hover:underline text-xl font-semibold w-full">Skills</a>
+                <a href="#" class="hover:underline text-xl font-semibold w-full">Skills</a>
+                <a href="#" class="hover:underline text-xl font-semibold w-full">Projects</a>
+                <a href="#" class="hover:underline text-xl font-semibold w-full">Contact</a>
             </div>
-        </section>
-    </main>
+        </header>
+        <main class="flex-grow">
+            <section id="hero" class="pt-8 sm:pt-10 md:pt-12">
+                <div class="flex flex-col mx-5 xs:mx-10 sm:mx-10 md:mx-20 md:flex-row items-center gap-4 sm:gap-6 md:gap-8">
+                  <!-- Hero Image (Order First on Small Screens) -->
+                  <div class="flex flex-col items-center order-1 md:order-2 w-full md:w-1/2">
+                    <div class="w-3/4 sm:w-3/4 md:w-full lg:w-3/4">
+                      <img src="/media/hero-img.png" alt="Plang's profile picture" class="w-full object-cover rounded-full shadow-solid" />
+                    </div>
+                  </div>
+                  <!-- Text Content (Order Second on Small Screens) -->
+                  <div class="flex flex-col gap-4 mx-0 sm:gap-6 md:gap-8 w-full md:w-1/2 order-2 md:order-1">
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium leading-tight text-center md:text-left">
+                      Hi, I'm Plang,<br>Frontend Developer
+                    </h1>
+                    <p class="text-xs sm:text-sm md:text-base lg:text-xl font-medium text-center md:text-left">
+                      I possess top-notch expertise in HTML, Tailwind CSS, Git & GitHub (Collaborative Technology), and JavaScript. My proficiency in these technologies is exceptional, as I deliver high-quality skills in web development using these tools. Currently on training at Blockfuse Labs, Jos, Nigeria, to become a Fullstack Developer. Other technologies in view: React.js, Node.js, MongoDB, amongst others. 
+                    </p>
+                    <a href="https://github.com/dgplang?tab=repositories" target="_blank" aria-label="Download Plang's resume" class="w-full bg-red-500 text-xs text-center sm:text-sm md:w-fit md:text-base lg:text-xl text-white font-semibold px-3 sm:px-4 py-1 sm:py-2 rounded-none hover:bg-red-700 transition-colors">Download Resume</a>
+                  </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        // JavaScript to toggle the mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function(e) {
+            e.preventDefault();
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
