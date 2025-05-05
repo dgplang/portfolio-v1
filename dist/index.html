@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/dist/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/dist/style.css">
 </head>
 <body class="m-0 p-0 box-border">
     <div class="min-h-screen flex flex-col">
@@ -36,7 +36,7 @@
                   <!-- Hero Image (Order First on Small Screens) -->
                   <div class="flex flex-col items-center order-1 md:order-2 w-full md:w-1/2">
                     <div class="w-3/4 sm:w-3/4 md:w-full lg:w-3/4">
-                      <img src="/media/hero-img.png" alt="Plang's profile picture" class="w-full object-cover rounded-full shadow-solid" />
+                      <img src="/dist/media/hero-img.png" alt="Plang's profile picture" class="w-full object-cover rounded-full shadow-solid" />
                     </div>
                   </div>
                   <!-- Text Content (Order Second on Small Screens) -->
@@ -53,16 +53,38 @@
                   </div>
                 </div>
             </section>
-            <section id="blog-featured" class="bg-[#ebf7f9]">
-              <div class="flex flex-col md:flex-row mx-5 xs:mx-10 sm:mx-10 md:mx-20">
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center w-full py-4">
-                  <div class="text-lg font-semibold">Recent posts</div>
-                  <div class="hidden md:block text-blue-600 hover:underline">View all</div>
-                </div>
-                <div>
-                  <div></div>
-                  <div></div>
-                </div>
+            <section id="blog-featured" class="bg-cyan-50 pb-7">
+              <div class="flex flex-col vw-100 mx-5 xs:mx-10 sm:mx-10 md:mx-20">
+                  <!-- First Row -->
+                  <div class="flex flex-col md:flex-row md:justify-between md:items-center w-full py-4">
+                    <div class="font-semibold text-center text-2xl md:text-2xl md:text-lg">Recent posts</div>
+                    <div class="hidden md:block text-cyan-500"><a href="#" class="hover:underline">View all</a></div>
+                  </div>
+                  <!-- Second Row -->
+                  <div class="flex flex-col gap-6 md:flex-row w-full">
+                     <!-- Example content for the second row -->
+                     <div class="flex flex-col leading-7 gap-5 p-5 m-0 bg-white md:mr-2 w-full md:w-1/2">
+                        <div class="text-3xl font-medium font-semibold w-full">Making a design system from scratch</div>
+                        <div class="flex items-center gap-8 w-full">
+                            <div class="text-xl">12 Feb 2020</div>
+                            <div class="border-solid border-gray-500 border-l-2 h-5"></div>
+                            <div class="text-xl">Design, Pattern</div>
+                        </div>
+                        <div>Creating a design system from scratch is a strategic process that establishes a cohesive framework for building consistent, scalable, and user-friendly interfaces. It begins with defining core principles, such as typography, color palettes, and spacing, rooted in the brand's identity and user needs.
+                        </div>
+                     </div>
+                     <!-- Example content for the second row -->
+                     <div class="flex flex-col leading-7 gap-5 p-5 m-0 bg-white md:ml-2 w-full md:w-1/2">
+                      <div class="text-3xl font-medium font-semibold w-full">Creating pixel perfect icons in Figma</div>
+                      <div class="flex items-center gap-8 w-full">
+                          <div class="text-xl">12 Feb 2020</div>
+                          <div class="border-solid border-gray-500 border-l-2 h-5"></div>
+                          <div class="text-xl">Figma, Icon Design</div>
+                      </div>
+                      <div>Creating a design system from scratch is a strategic process that establishes a cohesive framework for building consistent, scalable, and user-friendly interfaces. It begins with defining core principles, such as typography, color palettes, and spacing, rooted in the brand's identity and user needs.
+                      </div>
+                   </div>
+                  </div>
               </div>
             </section>
         </main>
