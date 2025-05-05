@@ -4,7 +4,7 @@
         theme: {
           extend: {
             boxShadow: {
-              'solid': '-8px 8px 0 0 #ebf7f9', // Solid black shadow, adjust color and size
+              'solid': '-8px 8px 0 0 cyan-50', // Solid black shadow, adjust color and size
             },
           },
         },
